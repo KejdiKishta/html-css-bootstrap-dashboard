@@ -37,41 +37,56 @@
             <!-- *SIDEBAR -->
             <div class="sidebar col-md-4 col-lg-3 collapse d-md-block bg-dark py-4" id="navbarSupportedContent">
                 <!-- ?LOGO -->
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none d-none d-md-block">
                     <span class="fs-4 h1">Bootstrap Dashboard</span>
                 </a>
-                <hr class="text-white">
+                <hr class="text-white d-none d-md-block">
                 <!-- ?SIDEBAR LIST -->
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="#" class="nav-link text-white d-none d-md-block">
                             <i class="fa-solid fa-house"></i> Dashboard
                         </a>
+                        <a href="#" class="nav-link text-white d-block d-md-none">
+                            Dashboard
+                        </a>
                     </li>
                     <li>
-                        <a href="sponsorship-plans.html" class="nav-link text-white">
+                        <a href="sponsorship-plans.html" class="nav-link text-white d-none d-md-block">
                             <i class="fa-solid fa-chart-line"></i> Sponsorizzazione
                         </a>
+                        <a href="sponsorship-plans.html" class="nav-link text-white d-md-none">
+                            Sponsorizzazione
+                        </a>
                     </li>
                     <li>
-                        <a href="index.html" class="nav-link text-white">
+                        <a href="index.html" class="nav-link text-white d-none d-md-block">
                             <i class="fa-solid fa-box-archive"></i> Prodotti
                         </a>
-                    </li>
-                    <li>
-                        <a href="new-product.html" class="nav-link text-white active">
-                            <i class="fa-solid fa-plus"></i> Nuovo Prodotto
+                        <a href="index.html" class="nav-link text-white d-md-none">
+                            Prodotti
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="new-product.html" class="nav-link text-white active d-none d-md-block">
+                            <i class="fa-solid fa-plus"></i> Nuovo Prodotto
+                        </a>
+                        <a href="new-product.html" class="nav-link text-white d-md-none">
+                            Nuovo Prodotto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white d-none d-md-block">
                             <i class="fa-solid fa-user-tie"></i> Clienti
+                        </a>
+                        <a href="#" class="nav-link text-white d-md-none">
+                            Clienti
                         </a>
                     </li>
                 </ul>
                 <hr />
                 <!-- ?DROPDOWN -->
-                <div class="dropdown">
+                <div class="dropdown collapse d-md-block">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"/>
                         <strong>Mario Rossi</strong>
@@ -83,6 +98,25 @@
                         <li><a class="dropdown-item" href="#">Esci</a></li>
                     </ul>
                 </div>
+
+                <ul class="nav nav-pills flex-column mb-auto d-md-none">
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            Impostazioni
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            Profilo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            Esci
+                        </a>
+                    </li>
+                </ul>
+
             </div>
         <!-- !MAIN -->
         <main class="col-md-8 col-lg-9 p-3">
