@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Dashboard</title>
+
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/dash-css.css">
 </head>
-<body>
+<body class="vh-100">
     <!-- !HEADER -->
     <header>
         <!-- *NAVBAR -->
@@ -52,7 +54,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="sponsorship-plans.html" class="nav-link text-white active d-none d-md-block">
+                        <a href="sponsorship-plans.html" class="nav-link text-white d-none d-md-block">
                             <i class="fa-solid fa-chart-line"></i> Sponsorizzazione
                         </a>
                         <a href="sponsorship-plans.html" class="nav-link text-white d-md-none">
@@ -76,10 +78,10 @@
                         </a>
                     </li>
                     <li>
-                        <a href="clients.html" class="nav-link text-white d-none d-md-block">
+                        <a href="#" class="nav-link text-white d-none d-md-block active">
                             <i class="fa-solid fa-user-tie"></i> Clienti
                         </a>
-                        <a href="clients.html" class="nav-link text-white d-md-none">
+                        <a href="#" class="nav-link text-white d-md-none">
                             Clienti
                         </a>
                     </li>
@@ -116,71 +118,27 @@
                         </a>
                     </li>
                 </ul>
-
             </div>
+
             <!-- !MAIN -->
-            <main class="col-md-8 col-lg-9 p-2">
-                <div class="container-fluid text-center">
-                    <h2>Trova il piano perfetto per te</h2>
-                    <p class="text-secondary w-75 m-auto">Scegli tra le nostre opzioni di abbonamento e goditi funzionalità esclusive e performace migliori.</p>
-                    <h6 class="m-auto text-dark-emphasis py-2">Porta la tua esperienza al livello successivo!</h6>
-                    <div class="p-2">
-                        <button type="button" class="btn btn-primary rounded-pill">Scopri di più</button>
-                        <button type="button" class="btn btn-outline-secondary rounded-pill">Contattaci</button>
-                    </div>
-                    <div class="row my-2">
-                        <!-- *LEFT COL -->
-                        <div class="col-12 col-lg-4 p-2">
-                            <div class="border rounded p-0">
-                                <div class="fs-3 border rounded-top bg-light py-3">Gratis</div>
-                                <div class="fs-2 py-3">
-                                    <span class="fw-bold">€ 0</span>
-                                    <span class="text-secondary">/mese</span>
-                                </div>
-                                <ul class="list-unstyled">
-                                    <li>10 utenti</li>
-                                    <li>2 GB di spazio</li>
-                                    <li>Pubblicità</li>
-                                    <li>Supporto email</li>
-                                </ul>
-                                <a class="btn btn-outline-primary d-block mx-2 my-4" href="#" role="button">Prosegui</a>                    
+            <main class="col-md-8 col-lg-9 p-2 align-self-center d-flex justify-content-center">
+                <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+                    <div class="wheel"></div>
+                    <div class="hamster">
+                        <div class="hamster__body">
+                            <div class="hamster__head">
+                                <div class="hamster__ear"></div>
+                                <div class="hamster__eye"></div>
+                                <div class="hamster__nose"></div>
                             </div>
-                        </div>
-                        <!-- *CENTRAL COL -->
-                        <div class="col-12 col-lg-4 p-2">
-                            <div class="border border-primary rounded p-0">
-                                <div class="fs-3 border-bottom bg-primary rounded-top text-white py-3">Premium</div>
-                                <div class="fs-2 py-3">
-                                    <span class="fw-bold">€ 15</span>
-                                    <span class="text-secondary">/mese</span>
-                                </div>
-                                <ul class="list-unstyled">
-                                    <li>50 utenti</li>
-                                    <li>10 GB di spazio</li>
-                                    <li>Senza pubblicità</li>
-                                    <li>Supporto email prioritario</li>
-                                </ul>
-                                <a class="btn btn-primary d-block mx-2 my-4" href="#" role="button">Prosegui</a>   
-                            </div>                 
-                        </div>
-                        <!-- *RIGHT COL -->
-                        <div class="col-12 col-lg-4 p-2">
-                            <div class="border rounded p-0">
-                                <div class="fs-3 border-bottom rounded-top bg-light py-3">Enterprise</div>
-                                <div class="fs-2 py-3">
-                                    <span class="fw-bold">€ 29</span>
-                                    <span class="text-secondary">/mese</span>
-                                </div>
-                                <ul class="list-unstyled">
-                                    <li>Utenti illimitati</li>
-                                    <li>Spazio illimitato</li>
-                                    <li>Senza pubblicità</li>
-                                    <li>Supporto via email e chat</li>
-                                </ul>
-                                <a class="btn btn-primary d-block mx-2 my-4" href="#" role="button">Prosegui</a>                    
-                            </div>
+                            <div class="hamster__limb hamster__limb--fr"></div>
+                            <div class="hamster__limb hamster__limb--fl"></div>
+                            <div class="hamster__limb hamster__limb--br"></div>
+                            <div class="hamster__limb hamster__limb--bl"></div>
+                            <div class="hamster__tail"></div>
                         </div>
                     </div>
+                    <div class="spoke"></div>
                 </div>
             </main>
         </div>
